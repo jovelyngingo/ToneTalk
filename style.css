@@ -41,6 +41,7 @@ form .row{
 form .row label{
   font-size: 18px;
   margin-bottom: 5px;
+  color: #ffffff;
 }
 form .row:nth-child(2) label{
   font-size: 17px;
