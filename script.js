@@ -33,14 +33,14 @@ speechBtn.addEventListener("click", e =>{
         if(!synth.speaking){
             textToSpeech(textarea.value);
         }
-        if(textarea.value.length > 5000){
+        if(textarea.value.length > 1000){
             setInterval(()=>{
                 if(!synth.speaking && !isSpeaking){
                     isSpeaking = true;
                     speechBtn.innerText = "Convert To Speech";
                 }else{
                 }
-            }, 5000);
+            }, 1000);
             if(isSpeaking){
                 synth.resume();
                 isSpeaking = false;
